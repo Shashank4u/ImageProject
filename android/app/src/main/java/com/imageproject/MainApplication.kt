@@ -1,3 +1,4 @@
+import com.mlkitimage.NativeMlKitPackage;
 package com.imageproject
 
 import android.app.Application
@@ -20,6 +21,8 @@ class MainApplication : Application(), ReactApplication {
             PackageList(this).packages.apply {
               // Packages that cannot be autolinked yet can be added manually here, for example:
               // add(MyReactNativePackage())
+              add(com.mlkitimage.NativeMlKitPackage())s
+             
             }
 
         override fun getJSMainModuleName(): String = "index"
